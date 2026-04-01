@@ -1,0 +1,153 @@
+body {
+    background-color: #2a2a41;
+    color: #c0bde5;
+    font-family: Arial, "Comic Sans", sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+#homehero {
+    position: relative;
+    margin: auto;
+    min-width: 960px;
+    max-width: 1024px;
+}
+
+.home-image {
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+
+.head-image {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 100px;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #2a2a41;
+    min-width: 960px;
+    max-width: 1024px;
+    padding: 1em;
+}
+
+nav {
+    text-align: center;
+    padding: 1em;
+    font-size: 120%;
+    font-weight: bold;
+    color: #c0bde5;
+    word-spacing: 10em;
+    background-color: #393961;
+}
+
+nav a:link {
+    color: #c0bde5;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #4b9fd8;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #8540e4;
+    text-decoration: none;
+}
+
+main {
+    background-color: #2a2a41;
+    margin: 0.5em;
+}
+
+h2 {
+    text-align: left;
+}
+
+img {
+    display: block;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    background-color: #393961;
+}
+
+.right {
+    padding: 2em;
+    margin: 3em 1em 3em 1em;
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+    padding: 1em;
+    margin: 2em 1em 2em 1em;
+}
+
+a:link {
+    color: #8540e4;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4b9fd8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c0bde5;
+    text-decoration: none;
+}
+
+#foothero {
+    background-image: url(enderman.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    min-width: 960px;
+    max-width: 1024px;
+}
+
+footer {
+    font-size: 75%;
+    padding: 2em;
+    text-align: center;
+}
+
+@supports (display: grid) {
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    #wrapper {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "nav nav"
+            "section main"
+            "footer footer";
+    }
+}
