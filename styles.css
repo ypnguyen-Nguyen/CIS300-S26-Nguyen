@@ -335,6 +335,12 @@ tr:hover {
     color: #14b8a6;
 }
 
+.atm-pic {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
 .grid.grid-cols-1 {
     gap: 2rem;
 }
