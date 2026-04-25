@@ -261,6 +261,10 @@ footer {
     color: #a78bfa;
 }
 
+.email {
+    color: #e9d5ff;
+}
+
 /* Player Section */
 .players-wrapper {
     padding-top: 2.5rem;
@@ -410,6 +414,37 @@ iframe {
     padding: 2rem;
     border-radius: 20px;
     background-color: rgba(139, 92, 246, 0.2);
+}
+
+/* Builds */
+.build-title {
+    border: 1px solid #14b8a6;
+    border-radius: 0.625rem;
+    margin: 1rem;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+}
+
+.build {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.gallery-top img {
+    width: 100%;
+    height: 300;
+    display: block;
+}
+
+.gallery-bottom {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery-bottom img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 @media (min-width: 400px) {
